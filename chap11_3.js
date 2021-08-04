@@ -1,0 +1,14 @@
+var car={
+    name: 'Sonata',
+    speed: 50,
+    color: 'white',
+    start: function(){
+        return this.speed+10;
+    }
+};
+var cname=document.getElementById("carname");
+cname.textContent=car.name;
+var colname=document.getElementById("carcolor");
+colname.textContent=car.color;
+var cspeed=document.getElementById("carspeed");
+cspeed.textContent=car.start();

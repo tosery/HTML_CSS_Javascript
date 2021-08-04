@@ -1,0 +1,9 @@
+function digClock()
+{
+    var today = new Date();
+    var day = today.getMonth()+1 + "월 " + today.getDate() + "일 ";
+    var time = today.getHours() + "시 " + today.getMinutes() + "분" + today.getSeconds() + "초";
+    document.getElementById("digClock").innerHTML=day+time;
+    setTimeout('digClock()', 1000);
+}
+digClock();
